@@ -1,0 +1,78 @@
+<div class="w-full">
+    <section class="relative overflow-hidden py-20">
+      <div class="relative">
+        <div class="mx-auto max-w-xl lg:max-w-7xl">
+          <div class="mx-auto mb-14 max-w-2xl text-center">
+            <span class="mb-4 inline-block rounded-full bg-gray-50 px-3 py-1 text-xs font-semibold text-black">
+              OUR BLOG
+            </span>
+            <h1 class="text-5xl font-bold">{{blog.title}}</h1>
+          </div>
+          <div class="my-18 -mx-4 flex flex-wrap px-4">
+            <div class="mb-12 w-full px-4 lg:mb-0 lg:w-3/5">
+              <div class="group block w-full" href="#">
+                <img
+                  class="mb-5 block w-full rounded-lg"
+                  [src]="getImage(blog)"
+                  alt=""
+                />
+                <span class="mb-5 block text-gray-500">Jul 20, 2023</span>
+                <div [innerHTML]="blog.content"></div>
+              </div>
+            </div>
+            <div class="w-full px-4 lg:w-2/5">
+              <a class="group mb-8 md:flex" href="#">
+                <img
+                  class="h-28 w-40 rounded-lg"
+                  src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&amp;auto=format&amp;fit=crop&amp;w=1470&amp;q=80"
+                  alt=""
+                />
+                <div class="my-4 pt-2 md:ml-6 md:mt-0">
+                  <span class="mb-2 block text-gray-500">Jul 20, 2022</span>
+                  <h4 class="text-xl font-semibold text-gray-900">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  </h4>
+                </div>
+              </a>
+              <a class="group mb-8 md:flex" href="#">
+                <img
+                  class="h-28 w-40  rounded-lg"
+                  src="https://images.unsplash.com/photo-1591228127791-8e2eaef098d3?ixlib=rb-4.0.3&amp;auto=format&amp;fit=crop&amp;w=1470&amp;q=80"
+                  alt=""
+                />
+                <div class="my-4 pt-2 md:ml-6 md:mt-0">
+                  <span class="mb-2 block text-gray-500">Jul 20, 2022</span>
+                  <h4 class="text-xl font-semibold text-gray-900">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  </h4>
+                </div>
+              </a>
+              <a class="group mb-8 md:flex" href="#">
+                <img
+                  class="h-28 w-40 rounded-lg"
+                  src="https://images.unsplash.com/photo-1634128221889-82ed6efebfc3?ixlib=rb-4.0.3&amp;auto=format&amp;fit=crop&amp;w=1470&amp;q=80"
+                  alt=""
+                />
+                <div class="my-4 pt-2 md:ml-6 md:mt-0">
+                  <span class="mb-2 block text-gray-500">Jul 20, 2022</span>
+                  <h4 class="text-xl font-semibold text-gray-900">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  </h4>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="mt-14 text-center">
+            <button
+              type="button"
+              class="rounded-md border border-black px-3 py-2 text-sm font-semibold text-black shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
+            >
+              View All Posts
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+  </div>
+  

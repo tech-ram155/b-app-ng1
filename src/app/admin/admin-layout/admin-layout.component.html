@@ -1,0 +1,6 @@
+<div *ngIf="isLoggedIn; else loginTemplate">
+    <router-outlet></router-outlet>
+  </div> 
+  <ng-template #loginTemplate>
+    <login></login>
+  </ng-template>
