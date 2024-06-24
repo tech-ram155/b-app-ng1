@@ -10,7 +10,7 @@
           quam ratione placeat?
         </p>
         <!-- search component -->
-        <search-bar></search-bar>
+        <search-bar (searchCompleted)="filteredBlogs = $event"></search-bar>
       </div>
       <!-- blog-category-link--> 
       <blog-category-link></blog-category-link>
@@ -35,24 +35,28 @@
             </p>
             <div #editor></div>
             <div class="mt-4 flex space-x-3 ">
-              <img
+              <!-- <img
                 class="h-full w-10 rounded-lg"
                 src="https://www.uifaces.co/wp-content/uploads/2022/01/uifaces-logo.svg"
                 alt="Emily Lee"
-              />
+              /> -->
               <div>
                 <p class="text-sm font-semibold leading-tight text-gray-900">
-                  Emily Lee
+                 {{blog.author}}
                 </p>
-                <p class="text-sm leading-tight text-gray-600">3 April 2023</p>
+                <p class="text-sm leading-tight text-gray-600">{{blog.publicationDate | date}}</p>
               </div>
             </div>
           </div>
         </div>
       </div>
-<hr class="my-8" />
 
-   <!-- <pagination></pagination> -->
+<pagination
+[totalResults]="totalResults"
+[resultsPerPage]="resultsPerPage"
+[currentPage]="currentPage"
+(pageChange)="onPageChange($event)"
+></pagination>
     </div>
   </div>
   

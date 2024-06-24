@@ -20,7 +20,11 @@ export class BlogService {
   getBlogById(id: string): Observable<Blog> {
     return this.http.get<Blog>(`${this.blogUrl}/${id}`);
   }
-  
+
+  searchBlogs(query: string): Observable<any> {
+    return this.http.get<any>(`${this.blogUrl}?search=${query}`);
+  }
+
   private selectedCategorySubject = new BehaviorSubject<string | null>(null);
   selectedCategory$ = this.selectedCategorySubject.asObservable();
 
