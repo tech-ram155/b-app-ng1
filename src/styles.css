@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.content-wrap h2 {
+    font-size: 30px;
+    margin: 20px 0px;
+}
+
+.content-wrap h3 {
+    font-size: 24px;
+    margin: 16px 0px;
+}
+.content-wrap ul{
+    list-style: initial;
+}

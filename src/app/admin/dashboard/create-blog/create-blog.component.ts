@@ -19,6 +19,7 @@ export class CreateBlogComponent implements OnInit {
   blogId: string | null = null;
   public Editor:any = Editor;
 
+
   constructor(
     private fb: FormBuilder,
     private blogService: BlogService,
